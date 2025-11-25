@@ -1,0 +1,64 @@
+import { Mail, Linkedin, Github } from "lucide-react";
+import styles from "./Contact.module.css";
+
+export default function Contact() {
+  return (
+    <section id="contact" className={styles.section}>
+      <header className={styles.head}>
+        <h2 className={styles.title}>Contact</h2>
+        <p className={styles.sub}>Let’s build something — I’m open to roles, collabs, and cool ideas.</p>
+      </header>
+
+      <div className={styles.wrap}>
+        {/* accent strip */}
+        <span className={`${styles.accent} ${styles.accentBlue}`} />
+        {/* aura */}
+        <span aria-hidden className={styles.aura} />
+
+        <div className={styles.rows}>
+          <a href="mailto:hadysaleh2003@gmail.com" className={styles.row}>
+            <Mail size={18} />
+            <span>hadysaleh2003@gmail.com</span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/hady-saleh-8269422b1/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.row}
+          >
+            <Linkedin size={18} />
+            <span>LinkedIn</span>
+          </a>
+
+          <a
+            href="https://github.com/Hadys2003"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.row}
+          >
+            <Github size={18} />
+            <span>GitHub</span>
+          </a>
+        </div>
+
+        <div className={styles.actions}>
+          
+          <a href="mailto:hadysaleh2003@gmail.com" className={`${styles.ctaBtn} ${styles.primary}`}>
+            Let’s Work Together
+          </a>
+
+          <a
+            href="/HadySalehResume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${styles.ctaBtn} ${styles.secondary}`}
+          >
+            Preview Resume
+          </a>
+
+        </div>
+      </div>
+    </section>
+  );
+}
