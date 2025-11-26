@@ -9,9 +9,11 @@
 
 /* Global font & colors */
 body {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  background-color: #ffffff;   /* Light background */
-  color: #0f172a;              /* Dark slate for better readability */
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Soft, slightly warm background */
+  background:
+    radial-gradient(circle at top left, #f4f3ff 0, #f9fafb 42%, #f8fafc 100%);
+  color: #020617;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
