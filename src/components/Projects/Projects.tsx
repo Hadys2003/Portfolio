@@ -4,7 +4,7 @@ import ProjectCard, { Project } from "./ProjectCard";
 const projects: Project[] = [
   {
     title: "OptiFlow",
-    kicker: "Full Stack • AI Automation",
+    kicker: "Full Stack • AI Automation (2025)",
     description:
       "AI-powered workflow automation platform that turns natural-language instructions into editable workflows, integrates with cloud tools, and supports human-in-the-loop approvals.",
     stack: ["TypeScript",
@@ -23,7 +23,7 @@ const projects: Project[] = [
   },
   {
     title: "Travel Companion App",
-    kicker: "Full Stack Web App",
+    kicker: "Full Stack Web App (2025)",
     description:
     "Responsive travel platform providing real-time city data, business listings, and local information for hotels, rentals, restaurants, attractions, weather, and events.",
     stack: [ "HTML",
@@ -37,7 +37,7 @@ const projects: Project[] = [
   },
   {
     title: "CPU Simulation & Custom Language",
-    kicker: "C++ • Systems Programming",
+    kicker: "C++ • Systems Programming (2023)",
     description:
     "Simulated CPU with a custom programming language, including registers, memory, and an instruction set for executing simple programs.",
     stack: ["C++", "OOP", "Simulation", "Parsing"],
@@ -46,7 +46,7 @@ const projects: Project[] = [
   },
   {
     title: "Salon Booking Platform",
-    kicker: "Web App • PHP",
+    kicker: "Web App • PHP (2023)",
     description:
     "Appointment booking platform for a women’s hair salon, allowing clients to schedule, reschedule, and cancel visits through a user-friendly web interface.",
     stack: ["PHP", "Symfony", "MySQL", "HTML", "CSS"],

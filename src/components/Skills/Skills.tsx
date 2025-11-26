@@ -13,7 +13,9 @@ const skills = [
       "HTML",
       "CSS",
       "C",
-      "Assembly"
+      "Assembly",
+      "C#",
+      "PHP",
     ],
   },
   {
@@ -23,7 +25,6 @@ const skills = [
       "Django",
       "Flask",
       "Node.js",
-      "Docker",
       "Git/GitHub",
       "PostgreSQL",
       "MongoDB",
@@ -31,7 +32,7 @@ const skills = [
       "Tailwind CSS",
       "Vite",
       "Pygame",
-      "Linux (Bash, Shell Scripting)"
+      "Linux (Bash, Shell Scripting)",
     ],
   },
   {
@@ -49,7 +50,23 @@ const skills = [
       "Variational Autoencoders",
       "Generative Models",
       "Gradient Descent & Optimization",
-      "Machine Translation (seq2seq)"
+      "Machine Translation (seq2seq)",
+    ],
+  },
+  {
+    category: "☁️ Cloud & DevOps",
+    items: [
+      "AWS (EC2, S3, IAM)",
+      "AWS Lambda",
+      "API Gateway",
+      "Google Cloud",
+      "Cloud Run",
+      "Firebase (Auth, Firestore, Storage)",
+      "Vertex AI / Gemini",
+      "Vercel",
+      "Docker",
+      "GitHub Actions (CI/CD)",
+      "AI Agent Builder",
     ],
   },
   {
@@ -63,7 +80,7 @@ const skills = [
       "PCB (EasyEDA)",
       "RF Transmitters & Receivers (315 MHz)",
       "Power Management",
-      "Breadboarding & Prototyping"
+      "Breadboarding & Prototyping",
     ],
   },
   {
@@ -75,7 +92,7 @@ const skills = [
       "Finite Automata (DFA/NFA)",
       "Database Management Systems",
       "Software Engineering (Agile, Modular Design)",
-      "Computer Architecture (ALU, Memory, Assembly)"
+      "Computer Architecture (ALU, Memory, Assembly)",
     ],
   },
   {
@@ -85,7 +102,7 @@ const skills = [
       "Memory Management & Vulnerabilities",
       "Binary Exploitation Basics",
       "Screen Capture & Process Hooking Concepts",
-      "Cybersecurity Fundamentals"
+      "Cybersecurity Fundamentals",
     ],
   },
   {
@@ -96,11 +113,10 @@ const skills = [
       "OpenAI API",
       "O*Net API",
       "UI/UX Basics",
-      "Game Development (Unity basics, Chess, Simulation projects)"
+      "Microsoft Graph API",
     ],
   },
 ];
-
 
 export default function Skills() {
   return (
@@ -114,7 +130,11 @@ export default function Skills() {
         {skills.map((block, i) => (
           <article key={block.category} className={styles.card}>
             {/* gradient accent strip */}
-            <span className={`${styles.accent} ${styles[`accent${(i % 4) + 1}`]}`} />
+            <span
+              className={`${styles.accent} ${
+                styles[`accent${(i % 4) + 1}`]
+              }`}
+            />
 
             {/* subtle glow aura */}
             <span className={styles.aura} aria-hidden />
@@ -123,7 +143,9 @@ export default function Skills() {
 
             <div className={styles.badges}>
               {block.items.map((skill) => (
-                <span key={skill} className={styles.badge}>{skill}</span>
+                <span key={skill} className={styles.badge}>
+                  {skill}
+                </span>
               ))}
             </div>
           </article>

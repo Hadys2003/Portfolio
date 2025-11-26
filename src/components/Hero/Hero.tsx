@@ -31,7 +31,7 @@ export default function Hero() {
           <span>Vite</span>
           <span>Node</span>
           <span>C/C++</span>
-          <span>Microcontrollers</span>
+          <span>Python</span>
         </div>
 
         <div className={styles.cta}>
